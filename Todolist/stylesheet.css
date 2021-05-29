@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: slategrey;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 0;
+}
+#to{
+  margin-left:-550px;
+}
+
+#glavnoe{
+  margin-left:10%;
+  width: 80%;
+  height:50%;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 500px;
+
+}
+
+#newtasks{
+  width: 500px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#adder{
+  height: 33px;
+  width: 45px;
+  margin-left: 20px;
+  background-color: cornflowerblue;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 30px;
+}
+.row{
+  width: 700px;
+  height: 30px;
+  margin-left:176px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 6px;
+
+}
+.photo{
+  margin-top:-11px  ;
+  margin-right: 3px;
+  width: 22px;
+  height: 20px;
+  float: right;
+
+}
+.checkbox{
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin:4px 10px 2px 0;
+  border: 2px solid black;
+  background-color: #b3d4fc;
+}
+
+input:checked + .line  {
+  text-decoration: line-through;
+}

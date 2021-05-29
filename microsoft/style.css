@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+header{
+  height: 80vh;
+  background-color: #eee;
+  background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4q2qk?ver=1006&q=90&m=6&h=1192&w=2120&b=%23FFFFFFFF&l=f&f=jpg&o=t&aim=true);
+  background-size: cover;
+  background-position: center;
+  margin-left:20px;
+  margin-right: 20px;
+  border: 1px dotted black;
+}
+.top{
+  width:370px;
+  height:80px;
+  font-size: 18px;
+  color: black;
+  font-weight: 50;
+  padding-top: 100px;
+  margin-left:60px;
+}
+.morechel{
+  width: 100px;
+  height: 40px;
+  color: white;
+  padding: 10px;
+  background-color: black;
+
+  }
+.onechel{
+  width: 100px;
+  height: 40px;
+  color: black;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.card{
+  width:23%;
+  margin:30px 8px 60px 13px;
+
+  display: inline-block;
+}
+.card-image{
+  width: 100%;
+  margin-top:20px;
+}
+.micrologo{
+  width: 100%;
+  height: 60px;
+}
+.firstrow{
+  margin-left:20px;
+  margin-top: 5px;
+
+}
+.secondrow{
+  width: 120px;
+  height: 30px;
+  margin-left: 30px;
+
+}
+.thirdrow{
+  width: 120px;
+  height: 50px;
+  margin-left: 30px;
+
+}
+.fourthrow{
+  width: 120px;
+  height: 50px;
+  margin-left: 30px;
+
+}
+.fifthrow{
+  width: 120px;
+  height: 50px;
+  margin-left: 30px;
+
+}
+.sixrow{
+  width: 120px;
+  height: 50px;
+  margin-left: 480px;
+
+}
+.seven{
+  margin-left: 20px;
+  margin-right: 10px;
+
+}
+.eight{
+  margin-left: 5px;
+
+}
