@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS TABLE</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+      }
+
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+      }
+      #first_tr {
+        background-color: #dddddd;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      #tr_name {
+        max-width: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr id="first_tr">
+        <th>№</th>
+        <th id="name_tr">Название</th>
+        <th>Цена</th>
+        <th>Количество</th>
+        <th>В рассрочку</th>
+      </tr>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script>
+      var tableData = [
+        {
+          id: 1,
+          name: "Чехол OEM 11199 для iPhone 11 черный",
+          price: "1 200 ₸",
+          count: 120,
+          instalment: true,
+        },
+        {
+          id: 2,
+          name: "Чехол Samsung Smart S View Wallet Cover EF-EA562 Зеленый",
+          price: "17 990 ₸",
+          count: 33,
+          instalment: false,
+        },
+        {
+          id: 3,
+          name: "Samsung EF-JS906CTEGRU для Samsung Galaxy S22 Черный",
+          price: "13 990 ₸",
+          count: 0,
+          instalment: false,
+        },
+        {
+          id: 4,
+          name: "Veles для iPhone 13 Pro Max прозрачный",
+          price: "790 ₸",
+          count: 3,
+          instalment: true,
+        },
+        {
+          id: 5,
+          name: "OEM для Apple iPhone 11 прозрачный",
+          price: "790 ₸",
+          count: 20,
+          instalment: true,
+        },
+        {
+          id: 6,
+          name: "OEM 11199 для iPhone 11 черный",
+          price: "1 200 ₸",
+          count: 55,
+          instalment: true,
+        },
+        {
+          id: 7,
+          name: "Чехол Apple MM2Y3ZM MagSafe для Apple iPhone 12 Pro",
+          price: "36 060 ₸",
+          count: 100,
+          instalment: false,
+        },
+      ];
+      let k = "<tbody>";
+      for (i = 0; i < tableData.length; i++) {
+        k += "<tr>";
+        k += "<td>" + tableData[i].id + "</td>";
+        k += "<td id='tr_name'>" + tableData[i].name + "</td>";
+        k += "<td>" + tableData[i].price + "</td>";
+        if (tableData[i].count != 0) {
+          k += "<td>" + tableData[i].count + "</td>";
+        } else {
+          k += "<td>" + "Нет в наличии" + "</td>";
+        }
+        if (tableData[i].instalment) {
+          k +=
+            "<td>" +
+            '<img src="http://assets.stickpng.com/thumbs/5aa78e207603fc558cffbf19.png" alt="done" width="30px">' +
+            "</td>";
+        } else {
+          k += "<td>" + " " + "</td>";
+        }
+
+        k += "</tr>";
+      }
+      k += "</tbody>";
+      document.getElementById("tableBody").innerHTML = k;
+    </script>
+  </body>
+</html>
