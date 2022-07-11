@@ -1,12 +1,13 @@
 function Addtask(){
   let newtasks = document.getElementById('newtasks').value;
-  let lists = document.getElementById('lists');
+  let lists = document.getElementsByClassName('lists')[0];
   let rows = document.createElement('div');
   let checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.className = 'checkbox';
   let box = document.createElement('div');
-  let span = document.createElement('span');
+  box.className = 'box';
+  let span = document.createElement('div');
   span.className = 'line';
 
 
@@ -19,8 +20,8 @@ function Addtask(){
     span.append(newtasks);
     box.appendChild(checkbox);
     box.appendChild(span);
+    box.appendChild(addclick)
     rows.appendChild(box);
-    rows.appendChild(addclick);
     lists.append(rows);
     document.getElementById('newtasks').value = '';
   }
