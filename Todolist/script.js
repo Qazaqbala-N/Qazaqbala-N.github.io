@@ -1,5 +1,5 @@
 function Addtask(){
-  let newtasks = document.getElementById('newtasks').value;
+  let newtasks = document.getElementById('newtasks').value.toUpperCase();
   let lists = document.getElementsByClassName('lists')[0];
   let rows = document.createElement('div');
   let checkbox = document.createElement('input');
